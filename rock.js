@@ -70,7 +70,7 @@ let playerScore = 0
             }
             
     
-            function winnerCheck() {
+           function winnerCheck() {
                 if (computerScore === 5){
                   console.log("Player won!")
                 }
@@ -79,21 +79,24 @@ let playerScore = 0
                 }
                } 
 
-           function check() {
-            if(playerScore < 5 || computerScore < 5)
-            playRound() 
-            winnerCheck()
-            }
+               function check() {
+                if(playerScore < 5 || computerScore < 5)
+                playRound() 
+                
+                } 
+        
+               
+                check()
+                winnerCheck()
+          
+        }
+            
+        
                
             
-                
-  
-          
-            check()
-               
-       
-         
-        }
+            
+        playRound() 
+           
             
             
             
